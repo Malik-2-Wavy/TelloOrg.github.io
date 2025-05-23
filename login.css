@@ -1,0 +1,127 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(20, 20, 40, 0.95);
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  width: 320px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #ffce31;
+  letter-spacing: 1px;
+}
+
+form.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: 0 0 8px #ffce31;
+  background-color: #222;
+  color: #fff;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+}
+
+.password-wrapper button {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #ffce31;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.password-wrapper button:hover {
+  color: #fff;
+}
+
+button[type="submit"] {
+  background-color: #ffce31;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #150f2d;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: #e6b922;
+}
+
+p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+p a {
+  color: #ffce31;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.error-msg {
+  color: #ff5555;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  min-height: 18px;
+}
+
